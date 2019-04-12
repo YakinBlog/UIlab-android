@@ -1,17 +1,17 @@
-package com.yakin.uilab.activity.widget;
+package com.yakin.uilab.adjust.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RadioGroup;
 
-public class CustomRadioGroup extends RadioGroup {
+public class FitRadioGroup extends RadioGroup {
 
-    public CustomRadioGroup(Context context) {
+    public FitRadioGroup(Context context) {
         super(context);
     }
 
-    public CustomRadioGroup(Context context, AttributeSet attrs) {
+    public FitRadioGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -52,9 +52,7 @@ public class CustomRadioGroup extends RadioGroup {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         int maxWidth = r - l;
-        int x = 0;
-        int y = 0;
-        int row = 1;
+        int x = 0;int y = 0;int row = 1;
 
         for (int index = 0; index < getChildCount(); index++) {
             View child = getChildAt(index);

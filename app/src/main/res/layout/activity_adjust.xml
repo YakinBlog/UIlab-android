@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.AdjustActivity">
+    tools:context=".adjust.AdjustActivity">
 
-    <com.yakin.uilab.activity.widget.CustomRadioGroup
+    <TextView
+        android:id="@+id/radio_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioGroup"
+        android:textAllCaps="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.yakin.uilab.adjust.widget.FitRadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/radio_group_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -23,7 +40,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="radio2" />
+            android:text="2" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -43,12 +60,167 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="radio6" />
+            android:text="6" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="radio7" />
-    </com.yakin.uilab.activity.widget.CustomRadioGroup>
+            android:text="7" />
 
-</android.support.constraint.ConstraintLayout>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radio8" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radio9" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radio10" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radio11" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="radio12" />
+    </com.yakin.uilab.adjust.widget.FitRadioGroup>
+
+    <TextView
+        android:id="@+id/label_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文本标签"
+        android:textAllCaps="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/radio_group"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.yakin.uilab.adjust.widget.FitTextViewGroup
+        android:id="@+id/fit_view_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/label_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#75cac3"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2a6171"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签标签标签标签标签2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6d3939"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签标签3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e4508f"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签标签标签4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#480032"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8d309b"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e3c4a8"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#560764"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签标签标签标签8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616f39"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bb8fa9"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签标签标签标签标签标签标签标签标签10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#560764"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签11"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bd512f"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="标签标签12"/>
+    </com.yakin.uilab.adjust.widget.FitTextViewGroup>
+
+    <com.yakin.uilab.adjust.widget.MarkTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[:drawable:q_icon:]阿萨德卡死了大家理解阿达水电费[:raw:q_icon:]阿斯顿发士大夫卡号啊是的[:assets:q_icon.png:]会计法哈可是的回复[:file:/sdcard/q_icon.png:]"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/fit_view_group"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
